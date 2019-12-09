@@ -1,0 +1,45 @@
+.results {
+	margin-bottom: 80px;
+	h1 {
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	.test_item {
+		width: 100%;
+		display: flex;
+		-webkit-justify-content: flex-start;
+		        justify-content: flex-start;
+		-webkit-align-items: center;
+		        align-items: center;
+		height: 90px;
+		&:nth-child(odd) {
+			background: #F1F4F4;
+		}
+		&:nth-child(even) {
+			background: #F8F8F8;
+		}
+		
+		.test_item__name {
+			width: 50%;
+			padding-left: 45px;
+			padding-right: 45px;
+			a {
+				color: #119489;
+				text-decoration: underline;
+				cursor: pointer;
+				font-weight: 500;
+				font-size: 25px;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		.test_item__maximum_points {
+			width: 50%;
+			padding-right: 45px;
+			font-weight: normal;
+			font-size: 20px;
+			color: #414141;
+		}
+	}
+}
