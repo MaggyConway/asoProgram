@@ -18,10 +18,17 @@ $result_intersect_admin = array_intersect($arGroupAvalaibleAdmin, $arGroups);?>
 		<? } ?>
 		<div class="header__top--right">
 			<ul class="header__menu">
-				<li><a href="/tests/#tests" onclick="smoothToBlock()">Тесты</a></li>
+				<li><a href="/tests/#tests_page" onclick="smoothToBlock()">Тесты</a></li>
 				<li><a href="/tests/#results" onclick="smoothToBlock()">Результаты</a></li>
 			</ul>
-			<!-- <div class="header__search"></div> -->
+			<div class="small_menu_btn btn">Меню</div>
+			<div class="small_menu">
+				<ul>
+					<li><a href="/tests/#tests_page" onclick="smoothToBlock()">Тесты</a></li>
+					<li><a href="/tests/#results" onclick="smoothToBlock()">Результаты</a></li>
+				</ul>
+				<div class="small_menu_btn--close"></div>
+			</div>
 			<form action="<?=$arResult["AUTH_URL"]?>">
 				<?foreach ($arResult["GET"] as $key => $value):?>
 				<input type="hidden" name="<?=$key?>" value="<?=$value?>" />

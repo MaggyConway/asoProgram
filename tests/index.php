@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Тесты");
 ?>
 
-<section id="tests">
+<section id="tests_page">
 <div class="wrapper">
 	<h1>Тесты</h1>
 	 <?$APPLICATION->IncludeComponent(
@@ -84,33 +84,3 @@ $APPLICATION->IncludeFile(
 );
 ?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
-
-<script>
-	$(function(){
-		$('a[href^="#"]').on('click', function(event) { 
-		event.preventDefault();
-		    var src = $(this).attr("href"),
-		    sectionPosition = $(src).offset().top - 30;
-		    $('html, body').animate({scrollTop: sectionPosition}, 1000);
-		});
-	});
-
-	function smoothToBlock() {
-		event.preventDefault();
-	    var src = '#' + $(event.target).attr("href").split('#')[1];
-	    console.log(src);
-	    var sectionPosition = $(src).offset().top - 30;
-	    $('html, body').animate({scrollTop: sectionPosition}, 1000);
-	}
-
-	jQuery(document).ready(function($) {
-		var myHash = location.hash; //получаем значение хеша
-		location.hash = ''; //очищаем хеш
-		if(myHash[1] != undefined){ //проверяем, есть ли в хеше какое-то значение
-		$('html, body').animate(
-		{scrollTop: $(myHash).offset().top - 30}
-		, 1000); //скроллим за полсекунды
-		location.hash = myHash; //возвращаем хеш
-		};
-	});
-</script>

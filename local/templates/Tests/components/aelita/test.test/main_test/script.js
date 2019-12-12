@@ -134,18 +134,3 @@ $(document).ready(function(){
 		return false;
 	});
 });
-
-
-var radioBtns = $('.radio_input');
-console.log(radioBtns);
-
-for (var i=0; i<radioBtns.length; i++) {
-	// radioBtns[i].change(function(event) {
-	// 	console.log(1);
-	// });
-	//console.log(radioBtns[i]);
-}
-
-
-	
-

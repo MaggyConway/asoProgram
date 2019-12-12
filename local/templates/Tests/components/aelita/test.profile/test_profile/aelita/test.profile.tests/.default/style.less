@@ -43,3 +43,30 @@
 		}
 	}
 }
+@media screen and (max-width: 600px) {
+	.results .test_item {
+    	flex-direction: column;
+    	-webkit-justify-content: center;
+    	        justify-content: center;
+    	.test_item__name, .test_item__maximum_points {
+		    width: 100%;
+		    padding-left: 20px;
+		    padding-right: 20px;
+		}
+	}
+	// .results .test_item .test_item__name a {
+	//     font-size: 20px;
+	// }
+}
+@media screen and (max-width: 380px) {
+	.results .test_item .test_item__name a {
+		font-size: 22px;
+	}
+	.results .test_item .test_item__maximum_points {
+    	font-size: 17px;
+   	}
+   	.results .test_item .test_item__maximum_points, .results .test_item .test_item__name {
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+}

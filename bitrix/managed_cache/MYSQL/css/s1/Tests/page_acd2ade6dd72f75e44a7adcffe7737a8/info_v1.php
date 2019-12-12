@@ -1,1 +1,0 @@
-<?php $filesInfo = array("/bitrix/components/aelita/test.profile/templates/.default/aelita/test.profile.tests/.default/style.css" => "1575528241181",); ?>

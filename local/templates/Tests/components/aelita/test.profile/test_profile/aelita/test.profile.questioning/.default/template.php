@@ -32,26 +32,31 @@
 	</div>
 
 	<?if(count($arResult["ITEMS"])>0){?>
-		<table class="summary__table">
-			<thead>
-				<td><?=GetMessage("TABLE_QUESTION")?></td>
-				<td><?=GetMessage("TABLE_SCORE")?></th></td>
-				<td><?=GetMessage("TABLE_ANSWER")?></td>
-				<?if($arResult["TEST"]["SHOW_ANSWERS"]=="Y"){?>
-					<td><?=GetMessage("SHOW_ANSWERS")?></td>
-				<?}?>
-			</thead>
-			<?foreach($arResult["ITEMS"] as $item){?>
-				<tr>
-					<td><?=$item["QUESTION_NAME"]?></td>
-					<td style="text-align: center"><?=$item["SCORES"]?></td>
-					<td><?=$item["SERIALIZED_RESULT"]?></td>
+		<div class="summary__table">
+			<table class="summary__table">
+				<thead>
+					<td><?=GetMessage("TABLE_QUESTION")?></td>
+					<td><?=GetMessage("TABLE_SCORE")?></th></td>
+					<td><?=GetMessage("TABLE_ANSWER")?></td>
 					<?if($arResult["TEST"]["SHOW_ANSWERS"]=="Y"){?>
-						<td><?=$item["ANSWERS"]?></td>
-					<?}?>
-				</tr>
-			<?}?>
-		</table>
+						<td><?=GetMessage("SHOW_ANSWERS")?></td>
+						<?}?>
+					</thead>
+					<?foreach($arResult["ITEMS"] as $item){?>
+						<tr>
+							<td><?=$item["QUESTION_NAME"]?></td>
+							<td style="text-align: center"><?=$item["SCORES"]?></td>
+							<td><?=$item["SERIALIZED_RESULT"]?></td>
+								<td>
+									<?if($arResult["TEST"]["SHOW_ANSWERS"]=="Y" && $arResult["SHOW"] == "Y"){?>
+									<?=$item["ANSWERS"]?>
+									<?}?>
+								</td>
+								
+							</tr>
+							<?}?>
+						</table>
+					</div>
 	<?}else{?>
 		<div class="empty_item">
 			<?=GetMessage("NO_TEST")?>

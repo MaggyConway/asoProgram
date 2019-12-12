@@ -5,7 +5,7 @@ $DBType = "mysql";
 $DBHost = "localhost";
 $DBLogin = "root";
 $DBPassword = "";
-$DBName = "database";
+$DBName = "asoprogram_database";
 $DBDebug = false;
 $DBDebugToFile = false;
 

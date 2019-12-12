@@ -1,5 +1,5 @@
 <?
-$MESS ['INIT_QUESTIONING'] = "Далее";
+$MESS ['INIT_QUESTIONING'] = "Отправить";
 $MESS ['CLOSE_QUESTIONING'] = "Завершить";
 $MESS ['CORRECT_ANSWER'] = "Ответ";
 $MESS ['STEP_QUESTIONING'] = "Вопрос №#STEP# из #NUMBER#.";

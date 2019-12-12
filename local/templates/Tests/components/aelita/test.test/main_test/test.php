@@ -158,7 +158,6 @@
 		<?}else{?>
 			<input type="submit" name="testsubmit" value="<?echo GetMessage("INIT_QUESTIONING")?>">
 		<?}?>
-		<input type="submit" name="closequestioning" value="<?echo GetMessage("CLOSE_QUESTIONING")?>">
 	</form>
 
 <?}?>

@@ -4,4 +4,5 @@ $MESS ['INIT_QUESTIONING'] = "Начать заново";
 $MESS ['LIST_PAGE'] = "Вернуться в список тестов";
 $MESS ['MAX_COUNT'] = "Попытка:";
 $MESS ['PROFILE_DETAIL_URL'] = "Посмотреть подробную статистику.";
+$MESS ['MAXIMUM_POINTS'] = "Набранный балл:";
 ?>

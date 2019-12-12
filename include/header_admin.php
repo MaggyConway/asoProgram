@@ -10,7 +10,15 @@
 				<li><a href="#about">О компании</a></li>
 				<li><a href="#courses">Курсы</a></li>
 			</ul>
-			<!-- <div class="header__search"></div> -->
+			<div class="small_menu_btn btn">Меню</div>
+			<div class="small_menu">
+				<ul>
+					<li><a href="#tests">Тесты</a></li>
+					<li><a href="#about">О компании</a></li>
+					<li><a href="#courses">Курсы</a></li>
+				</ul>
+				<div class="small_menu_btn--close"></div>
+			</div>
 			<form action="<?=$arResult["AUTH_URL"]?>">
 				<?foreach ($arResult["GET"] as $key => $value):?>
 				<input type="hidden" name="<?=$key?>" value="<?=$value?>" />

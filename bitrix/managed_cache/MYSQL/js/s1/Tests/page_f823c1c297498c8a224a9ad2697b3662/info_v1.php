@@ -1,1 +1,0 @@
-<?php $filesInfo = array("/bitrix/components/aelita/test.test/templates/.default/script.js" => "15755282413557",); ?>

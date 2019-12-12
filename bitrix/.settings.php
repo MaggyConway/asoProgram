@@ -45,7 +45,7 @@ return array (
       array (
         'className' => '\\Bitrix\\Main\\DB\\MysqliConnection',
         'host' => 'localhost',
-        'database' => 'database',
+        'database' => 'asoprogram_database',
         'login' => 'root',
         'password' => '',
         'options' => 2.0,
